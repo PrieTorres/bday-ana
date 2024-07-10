@@ -23,15 +23,21 @@ html, body, .text-container {
 
 .text-bday{
   color: white;
-  animation: resizing 1s infinite ease;
+  font-size: 3rem;
+  animation: resizing 2s infinite ease;
 }
 
 @keyframes resizing {
   0% {
     transform: scale(1);
+    text-shadow: 0px 0px 0px #f40490;
+  }
+  60% {
+    transform: scale(1.5);
+    text-shadow: 0px 1px 4px #f40490;
   }
   100% {
-    transform: scale(1.5);
-    text-shadow: 0px 0px 3px #f40490;
+    transform: scale(1);
+    text-shadow: 0px 0px 0px #f40490;
   }
 }
